@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Cleaning - Professional Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+        }
+        /* Curvas dinámicas y formas orgánicas fluidas de fondo */
+        .organic-curve-bg {
+            position: absolute;
+            width: 100%;
+            height: 480px;
+            top: 220px;
+            left: 0;
+            z-index: 1;
+            background: 
+                pointer-events: none;
+                linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%),
+                radial-gradient(circle at 100% 30%, #66BB33 0%, rgba(102,187,51,0) 45%),
+                radial-gradient(circle at 0% 70%, #003366 0%, rgba(0,51,102,0) 60%);
+            opacity: 0.15;
+        }
+        
+        /* Onda divisoria de color corporativo exacto */
+        .wave-container {
+            position: relative;
+            background: #FFFFFF;
+            overflow: hidden;
+        }
+        
+        .wave-divider {
+            position: absolute;
+            top: 260px;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23003366' fill-opacity='1' d='M0,192L60,192C120,192,240,192,360,176C480,160,600,128,720,138.7C840,149,960,203,1080,208C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'%3E%3Cpath fill='%2366BB33' fill-opacity='1' d='M0,160L60,176C120,192,240,224,360,218.7C480,213,600,171,720,165.3C840,160,960,192,1080,186.7C1200,181,1320,139,1380,117.3L1440,96L1440,140L1380,140C1320,140,1200,140,1080,140C960,140,840,140,720,140C600,140,480,140,360,140C240,140,120,140,60,140L0,140Z'%3E%3C/svg%3E");
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 2;
+            transform: scaleY(-1); /* Invertido para simular el diseño del mockup */
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen text-gray-800 antialiased overflow-x-hidden">
+
+    <div class="organic-curve-bg"></div>
+
+    <div class="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16">
+        
+        <header class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-8 relative z-20">
+            <div class="flex items-start gap-5 max-w-2xl">
+                <div class="flex-shrink-0 relative w-24 h-24 rounded-full bg-white shadow-md flex items-center justify-center p-3 border border-gray-100">
+                    <svg class="absolute -top-1 -right-1 w-6 h-6 text-[#003366]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/>
+                    </svg>
+                    <svg class="absolute top-2 -right-4 w-4 h-4 text-[#003366] opacity-70" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/>
+                    </svg>
+                    
+                    <div class="relative w-full h-full flex flex-col justify-between items-center">
+                        <div class="w-12 h-10 border-[3px] border-[#003366] relative rounded-sm mt-1 flex flex-wrap p-1 gap-0.5 justify-center items-center">
+                            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-14 h-4 overflow-hidden">
+                                <div class="w-10 h-10 border-[3px] border-[#003366] rotate-45 mt-2.5 mx-auto"></div>
+                            </div>
+                            <div class="w-3 h-3 bg-white border border-[#003366]"></div>
+                            <div class="w-3 h-3 bg-white border border-[#003366]"></div>
+                            <div class="w-3 h-3 bg-white border border-[#003366]"></div>
+                            <div class="w-3 h-3 bg-white border border-[#003366]"></div>
+                        </div>
+                        <path class="absolute bottom-0 w-16 h-5 text-[#66BB33]" fill="currentColor" d="M0,20 Q20,0 40,10 Q60,20 80,15 Q50,30 0,20 Z" />
+                        <svg class="w-16 h-6 text-[#66BB33] absolute -bottom-1" viewBox="0 0 50 20" fill="currentColor">
+                            <path d="M2,15 Q25,0 48,12 Q25,22 2,15 Z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-[#003366] leading-tight tracking-tight">
+                        Magic Cleaning - <span class="font-bold">Professional Cleaning Services</span>
+                    </h1>
+                    <p class="text-[#66BB33] font-semibold text-base sm:text-lg leading-snug">
+                        Clean spaces, better life. We handle the cleaning, you enjoy your time.
+                    </p>
+                    <p class="text-black italic text-xs sm:text-sm tracking-wide">
+                        ...Quality cleaning, trust, and security...
+                    </p>
+                    
+                    <div class="pt-3">
+                        <a href="https://wa.me/14072325246" target="_blank" class="inline-flex items-center gap-2 bg-[#66BB33] hover:bg-[#55aa22] text-white font-bold py-3 px-8 rounded-full shadow-md transition-all transform hover:scale-[1.02]">
+                            <span>Schedule via WhatsApp</span>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 0l3.086 8.914L24 12l-8.914 3.086L12 24l-3.086-8.914L0 12l8.914-3.086z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[420px] h-48 bg-gray-50 rounded-2xl overflow-hidden shadow-inner relative border border-gray-100">
+                <div class="absolute inset-0 bg-gradient-to-tr from-sky-50 to-white"></div>
+                <svg class="absolute top-4 right-12 w-6 h-6 text-blue-200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+                <svg class="absolute bottom-6 left-1/3 w-4 h-4 text-blue-100" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+                
+                <div class="absolute right-6 bottom-0 w-44 h-40 flex items-end justify-center">
+                    <div class="w-24 h-24 bg-gray-400 rounded-b-xl rounded-t-sm relative shadow-md border-t-4 border-gray-300">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-28 h-3 border-2 border-gray-400 rounded-full"></div>
+                        <div class="absolute -top-1 left-1 w-22 h-16 border-2 border-gray-500 rounded-full opacity-40"></div>
+                    </div>
+                    <div class="absolute -left-12 bottom-0 w-32 h-6 bg-blue-400 rounded-t-full border-b-4 border-gray-200 shadow-sm flex justify-around p-1">
+                        <div class="w-1 h-4 bg-white opacity-60 rounded-full"></div>
+                        <div class="w-1 h-4 bg-white opacity-60 rounded-full"></div>
+                        <div class="w-1 h-4 bg-white opacity-60 rounded-full"></div>
+                    </div>
+                    <div class="absolute -left-4 bottom-4 w-3 h-44 bg-blue-500 rounded-full rotate-[25deg] origin-bottom shadow-sm border-r border-blue-600"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="relative z-20 mb-12 max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-50 to-sky-100 border-b border-blue-200 py-4 text-center">
+                    <h2 class="text-xl font-bold text-black tracking-wide">Service Rates by Space Size</h2>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-black font-bold text-sm bg-white">
+                                <th class="p-4 pl-8">Space Size</th>
+                                <th class="p-4 text-center">Square Meters (Approx.)</th>
+                                <th class="p-4 pr-8 text-right">Rate per Service</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-900 text-sm font-medium">
+                            <tr class="border-b border-gray-100 hover:bg-slate-50 transition-colors">
+                                <td class="p-4 pl-8 font-semibold text-gray-900">Small</td>
+                                <td class="p-4 text-center text-gray-600">Up to 140 m²</td>
+                                <td class="p-4 pr-8 text-right font-bold text-[#003366]">$100 – $120</td>
+                            </tr>
+                            <tr class="bg-gray-50/70 border-b border-gray-100 hover:bg-slate-50 transition-colors">
+                                <td class="p-4 pl-8 font-semibold text-gray-900">Small-Medium</td>
+                                <td class="p-4 text-center text-gray-600">140 – 280 m²</td>
+                                <td class="p-4 pr-8 text-right font-bold text-[#003366]">$140 – $180</td>
+                            </tr>
+                            <tr class="border-b border-gray-100 hover:bg-slate-50 transition-colors">
+                                <td class="p-4 pl-8 font-semibold text-gray-900">Medium</td>
+                                <td class="p-4 text-center text-gray-600">280 – 465 m²</td>
+                                <td class="p-4 pr-8 text-right font-bold text-[#003366]">$450 – $650</td>
+                            </tr>
+                            <tr class="bg-gray-50/70 hover:bg-slate-50 transition-colors">
+                                <td class="p-4 pl-8 font-semibold text-gray-900">Very Large</td>
+                                <td class="p-4 text-center text-gray-600">Over 930 m²</td>
+                                <td class="p-4 pr-8 text-right font-semibold text-gray-500 italic">Contact for Quote</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-5 space-y-6">
+                
+                <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm overflow-hidden relative">
+                    <div class="w-24 h-16 rounded-full bg-gradient-to-br from-blue-50 to-sky-100 flex-shrink-0 flex items-center justify-center relative overflow-hidden">
+                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.656 48.656 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7C4.547 9.547 4.5 10.768 4.5 12H19.5z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12v7.5A2.25 2.25 0 006.75 21h10.5a2.25 2.25 0 002.25-2.25V12M9 5.25V3m6 2.25V3M9 11.25h6" />
+                        </svg>
+                        <div class="absolute bottom-0 w-full h-2 bg-[#66BB33]"></div>
+                    </div>
+                    <p class="text-xs text-gray-500 font-medium">Top tier commercial and residential infrastructure sanitation systems.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                    <ul class="space-y-4 text-gray-900 font-semibold text-sm sm:text-base">
+                        <li class="flex items-center gap-3">
+                            <span class="text-amber-400 text-lg">✨</span>
+                            <span>Commercial & Office Cleaning</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-400 text-lg">🧼</span>
+                            <span>Deep Cleaning (Thorough Clean)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-amber-600 text-lg">📦</span>
+                            <span>Move In / Move Out Cleaning</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-500 text-lg">🏗️</span>
+                            <span>Post-Construction Cleaning</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-md space-y-4">
+                    <h3 class="text-lg font-bold text-black border-b border-gray-100 pb-2">Our Guarantee</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.613 2 6.241 2 6.877c0 5.345 3.397 9.897 8 11.056 4.603-1.159 8-5.611 8-11.056 0-.636-.056-1.264-.166-1.877A11.954 11.954 0 0110 1.944zm1 9.414l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414L11 11.358z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="font-bold text-sm text-gray-900">Verified Personnel</span>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-[#66BB33]">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <span class="font-bold text-sm text-gray-900">Eco-Friendly Products</span>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center text-amber-500">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.757m0 0a3 3 0 10-4.243-4.243L12 8.172M14 10l-2.122 2.122m0 0l-5.657 5.657a2 2 0 11-2.828-2.828l5.657-5.657M11.879 12.122L10 14H5.243" />
+                                </svg>
+                            </div>
+                            <span class="font-bold text-sm text-gray-900">Trust & Flexibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="bg-gradient-to-br from-blue-50/80 to-sky-100/50 p-6 sm:p-8 rounded-2xl border border-blue-100 shadow-md relative overflow-hidden">
+                    
+                    <div class="absolute top-4 right-4 w-16 h-16 opacity-10 pointer-events-none hidden sm:block">
+                        <svg class="w-full h-full text-[#003366]" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 10H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2v-6a2 2 0 00-2-2zM8 17H5v-2h3v2zm11 0h-8v-2h8v2zM12 2a4 4 0 00-4 4v2h8V6a4 4 0 00-4-4z"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-black mb-6">Contact</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        
+                        <form class="md:col-span-7 space-y-4" onsubmit="event.preventDefault();">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="bg-white p-2 rounded-xl border border-blue-100 shadow-sm">
+                                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider">Name</label>
+                                    <input type="text" placeholder="Your Name" class="w-full bg-transparent border-none p-0 text-sm font-semibold text-gray-800 focus:ring-0 focus:outline-none placeholder-gray-300 mt-0.5">
+                                </div>
+                                <div class="bg-white p-2 rounded-xl border border-blue-100 shadow-sm">
+                                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider">Phone / Email</label>
+                                    <input type="text" placeholder="Your Contact Info" class="w-full bg-transparent border-none p-0 text-sm font-semibold text-gray-800 focus:ring-0 focus:outline-none placeholder-gray-300 mt-0.5">
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-2 rounded-xl border border-blue-100 shadow-sm">
+                                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider">Space Size</label>
+                                <input type="text" placeholder="e.g., 250 m² Office" class="w-full bg-transparent border-none p-0 text-sm font-semibold text-gray-800 focus:ring-0 focus:outline-none placeholder-gray-300 mt-0.5">
+                            </div>
+
+                            <div class="bg-white p-2 rounded-xl border border-blue-100 shadow-sm">
+                                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider">Message</label>
+                                <textarea rows="3" placeholder="Your Specific Needs..." class="w-full bg-transparent border-none p-0 text-sm font-semibold text-gray-800 focus:ring-0 focus:outline-none placeholder-gray-300 mt-0.5 resize-none"></textarea>
+                            </div>
+
+                            <div class="flex justify-end pt-2">
+                                <button type="submit" class="w-full sm:w-auto bg-[#003366] hover:bg-[#002244] text-white font-bold py-3 px-8 rounded-xl shadow-md transition-all transform hover:scale-[1.01] text-sm tracking-wide">
+                                    Request Free Quote
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="md:col-span-5 flex flex-col justify-between space-y-6 pt-2 pl-0 md:pl-4 border-t md:border-t-0 md:border-l border-blue-200/60">
+                            <div class="space-y-4 text-xs sm:text-sm font-medium text-gray-900">
+                                <div class="flex items-start gap-2.5">
+                                    <span class="text-red-500 text-base mt-0.5">📍</span>
+                                    <span class="leading-tight">2751 Dillard Rd, Eustis, FL 32726</span>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <span class="text-blue-500 text-base">✉️</span>
+                                    <a href="mailto:info@magiccleaning.com" class="hover:underline truncate">info@magiccleaning.com</a>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <span class="text-blue-600 text-base">📞</span>
+                                    <a href="tel:+14072325246" class="hover:underline">+1 (407) 232-5246</a>
+                                </div>
+                            </div>
+                            
+                            <div class="text-[10px] text-gray-400 font-medium">
+                                Secure end-to-end data processing infrastructure.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
